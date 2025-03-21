@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Student Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#enroll">Enroll Student</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#grades">Grades</a></li>
+                <li><a href="#messages">Messages</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Enroll Student Section -->
+    <section id="enroll">
+        <h2>Enroll a New Student</h2>
+        <form id="enroll-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" name="roll" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <button type="submit">Enroll Student</button>
+        </form>
+        <div id="student-list"></div>
+    </section>
+
+    <!-- Attendance Section -->
+    <section id="attendance">
+        <h2>Mark Attendance</h2>
+        <form id="attendance-form">
+            <label for="roll-id">Student Roll Number:</label>
+            <input type="text" id="roll-id" required>
+            <label for="status">Status:</label>
+            <select id="status">
+                <option value="present">Present</option>
+                <option value="absent">Absent</option>
+            </select>
+            <button type="submit">Submit Attendance</button>
+        </form>
+    </section>
+
+    <!-- Grades Section -->
+    <section id="grades">
+        <h2>Enter Grades</h2>
+        <form id="grades-form">
+            <label for="roll-id-grade">Roll Number:</label>
+            <input type="text" id="roll-id-grade" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required>
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" required>
+            <button type="submit">Submit Grade</button>
+        </form>
+    </section>
+
+    <!-- Messages Section -->
+    <section id="messages">
+        <h2>Send Messages</h2>
+        <form id="message-form">
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
